@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 * {
   margin: 0;
@@ -102,19 +102,21 @@
             line-height: normal;
           }
         }
+      
       }
 
+      
       ul {
         width: 286px;
         border-radius: 10px;
         background: rgba(196, 196, 196, 0);
         border: 1px solid #c4c4c4;
-        display: none;
 
         li {
           list-style-type: none;
 
           div {
+            
             display: flex;
             padding: 12px 30px 12px 27px;
             align-items: center;
@@ -130,15 +132,13 @@
             }
 
             button {
-              width: 20px;
-              height: 20px;
-              border: none;
-              background: none;
-              cursor: pointer;
+  
             }
           }
         }
       }
+
+      
     }
   }
 }

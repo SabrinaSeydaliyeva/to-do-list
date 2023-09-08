@@ -39,14 +39,14 @@ function addList(e) {
 function removeList(item) {
   console.log(item);
   item.parentElement.parentElement.remove();
-  checkLi();
 }
 
-function checkLi() {
-  let allList = document.querySelectorAll("li");
-  if (allList.length > 0) {
-    ul.style.display = "block";
-  } else {
-    ul.style.display = "none";
+function checkLi(){
+  let allList= document.querySelectorAll('li')
+  if(allList.length>0){
+
+  }
+  else{
+    ul.style.display=
   }
 }

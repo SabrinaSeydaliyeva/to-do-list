@@ -1,15 +1,16 @@
 let ul = document.querySelector("ul");
 let btn = document.querySelector("button");
 let input = document.querySelector("input");
-let errorMsj = document.querySelector("span");
+let errorMsj=document.querySelector("span")
 
 btn.addEventListener("click", addList);
+
 
 function addList(e) {
   e.preventDefault();
   if (input.value) {
-    errorMsj.style.display = "none";
-    ul.style.display = "block";
+    errorMsj.style.display="none"
+    ul.style.display='block'
     ul.innerHTML += `
 
   <li>
@@ -26,27 +27,18 @@ function addList(e) {
   </li>
 
   `;
-    input.value = "";
+  input.value=''
   } else {
-    errorMsj.style.display = "block";
+    errorMsj.style.display="block"
   }
-  let removeBtns = document.querySelectorAll(".remove-btn");
-  removeBtns.forEach((element) => {
-    element.addEventListener("click", () => removeList(element));
-  });
+let removeBtns= document.querySelectorAll('.remove-btn')
+removeBtns.forEach(element=>{
+  element.addEventListener('click', ()=>removeList(element))
+})
+
+  
 }
 
-function removeList(item) {
-  console.log(item);
-  item.parentElement.parentElement.remove();
-  checkLi();
-}
-
-function checkLi() {
-  let allList = document.querySelectorAll("li");
-  if (allList.length > 0) {
-    ul.style.display = "block";
-  } else {
-    ul.style.display = "none";
-  }
+function removeList(item){
+  console.log('gfredwq');
 }
